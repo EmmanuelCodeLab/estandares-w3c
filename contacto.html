@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario de contacto de EcoTienda.">
+  <title>Contacto | EcoTienda</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido principal</a>
+  <header class="cabecera"><div class="contenedor">
+    <p class="marca">EcoTienda</p>
+    <nav aria-label="Navegación principal"><ul class="menu">
+      <li><a href="index.html">Inicio</a></li><li><a href="productos.html">Productos</a></li><li><a aria-current="page" href="contacto.html">Contacto</a></li>
+    </ul></nav>
+  </div></header>
+  <main id="contenido" class="contenedor">
+    <h1>Contáctanos</h1>
+    <p>Completa el formulario académico de demostración. No se envían datos a un servidor.</p>
+    <form id="formContacto" class="formulario">
+      <div class="campo"><label for="nombre">Nombre completo</label><input id="nombre" name="nombre" type="text" autocomplete="name" required></div>
+      <div class="campo"><label for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" autocomplete="email" required></div>
+      <div class="campo"><label for="asunto">Asunto</label><select id="asunto" name="asunto" required><option value="">Selecciona una opción</option><option>Información de productos</option><option>Otra consulta</option></select></div>
+      <div class="campo"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" rows="5" required></textarea></div>
+      <button class="boton" type="submit">Enviar consulta</button>
+      <p id="resultado" class="mensaje" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+  <footer class="pie"><div class="contenedor"><p>&copy; 2026 EcoTienda. Proyecto académico.</p></div></footer>
+</body>
+</html>

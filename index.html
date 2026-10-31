@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EcoTienda: productos reutilizables para una vida cotidiana más sostenible.">
+  <title>Inicio | EcoTienda</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido principal</a>
+  <header class="cabecera">
+    <div class="contenedor">
+      <p class="marca">EcoTienda</p>
+      <nav aria-label="Navegación principal">
+        <ul class="menu">
+          <li><a aria-current="page" href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido" class="contenedor">
+    <section class="hero" aria-labelledby="titulo-principal">
+      <p class="etiqueta">Pequeños cambios, gran impacto</p>
+      <h1 id="titulo-principal">Compra consciente para un futuro sostenible</h1>
+      <p>Encuentra alternativas reutilizables que ayudan a reducir los residuos de todos los días.</p>
+      <a class="boton" href="productos.html">Conocer productos</a>
+    </section>
+    <section class="panel" aria-labelledby="por-que">
+      <h2 id="por-que">¿Por qué elegir EcoTienda?</h2>
+      <p>Promovemos productos duraderos, prácticos y reutilizables. Nuestro objetivo es facilitar decisiones de consumo responsables.</p>
+      <button class="boton secundario" id="btnConsejo" type="button" aria-expanded="false" aria-controls="consejo">Mostrar consejo ecológico</button>
+      <div id="consejo" class="mensaje" hidden>
+        Lleva una botella reutilizable: es una forma sencilla de disminuir el consumo de envases desechables.
+      </div>
+    </section>
+  </main>
+  <footer class="pie"><div class="contenedor"><p>&copy; 2026 EcoTienda. Proyecto académico.</p></div></footer>
+</body>
+</html>
